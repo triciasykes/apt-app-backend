@@ -9,7 +9,19 @@ Before we add the Aunthentication steps, make sure your fetch calls are working 
 
 ## What is JWT and Why Use it?
 
+- JWT stands for JSON Web Token, and it is an open standard for securely transmitting information between parties as a JSON object.
+- It is commonly used for authentication and authorization in web applications.
+- JWTs consist of three parts: the header, the payload, and the signature.
 
+- The header contains metadata about the token and the signing algorithm used.
+- The payload carries the claims, which are statements about the user or other data.
+- The signature is created by combining the encoded header, encoded payload, and a secret key using a specified algorithm.
+
+- When a user logs in, the server generates a JWT, signs it using a secret key, and sends it back to the client.
+- The client stores the token, typically in local storage or a cookie, and includes it in subsequent requests to the server.
+- The server can verify the authenticity of the token by validating the signature using the secret key.
+
+JWTs are stateless, scalable, and customizable.  They can be used across different domains or services as they are self-contained.
 
 ## Steps for backend connection.
 Do this very methodically.  Make sure everything goes in the right file/folder 
