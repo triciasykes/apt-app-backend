@@ -4,7 +4,7 @@
 # Read more: https://github.com/cyu/rack-cors
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'https//apt-app-backend.onrender.com'
+    origins 'apt-app-frontend.onrender.com'
     resource '*',
     headers: ["Authorization"],
     expose: ["Authorization"],
