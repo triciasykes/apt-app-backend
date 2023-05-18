@@ -2,9 +2,8 @@ user1 = User.where(email: "test1@example.com").first_or_create(password: "passwo
 user2 = User.where(email: "test2@example.com").first_or_create(password: "password", password_confirmation: "password")
 
 
-apartments1 = [
+apartments1 =const mockApartments = [
   {
-    id: 1,
     street: 'Hugo Ave',
     unit: '12',
     city: 'San Francisco',
@@ -18,7 +17,6 @@ apartments1 = [
     user_id: 1
   },
   {
-    id: 2,
     street: 'Mallorca Dr',
     unit: '32R',
     city: 'La Jolla',
@@ -29,10 +27,8 @@ apartments1 = [
     bathrooms: 2,
     pets: 'no',
     image: "https://images1.apartments.com/i2/Hv5KnVkv8qYhG0p8OaFqky8lP3XhputAz1s2LQoW5G0/117/la-jolla-palms-apartment-homes-san-diego-ca-building-photo.jpg",
-    user_id: 1
   },
   {
-    id: 3,
     street: 'Cantebury Lane',
     unit: '43',
     city: 'Phoenix',
@@ -43,9 +39,9 @@ apartments1 = [
     bathrooms: 1,
     pets: 'yes',
     image: "https://res.cloudinary.com/apartmentlist/image/upload/c_fill,dpr_auto,f_auto,g_center,h_415,q_auto,w_640/bde2c53e7c09a13c09dd7e55dc52604d.jpg",
-    user_id: 2
   }
 ]
+
 
 apartments2 = [
   {
