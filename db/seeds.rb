@@ -2,7 +2,7 @@ user1 = User.where(email: "test1@example.com").first_or_create(password: "passwo
 user2 = User.where(email: "test2@example.com").first_or_create(password: "password", password_confirmation: "password")
 
 
-apartments1 =const mockApartments = [
+apartments1 = [
   {
     street: 'Hugo Ave',
     unit: '12',
